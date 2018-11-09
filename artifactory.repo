@@ -1,6 +1,23 @@
-[Artifactory]
-name=Artifactory
-#baseurl=https://repo.schwarz/artifactory/rpm/7/os/x86_64/
-baseurl=https://repo.schwarz/artifactory/rpm/7/$basearch
+[base]
+name=CentOS-$releasever - Base
+baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/7/os/$basearch/
+enabled=1
+gpgcheck=0
+
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/7/updates/$basearch/
+enabled=1
+gpgcheck=0
+
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/7/extras/$basearch/
+enabled=1
+gpgcheck=0
+
+[centosplus]
+name=CentOS-$releasever - Plus
+baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/7/centosplus/$basearch/
 enabled=1
 gpgcheck=0
