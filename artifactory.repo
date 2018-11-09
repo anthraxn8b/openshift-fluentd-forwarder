@@ -1,5 +1,6 @@
 [Artifactory]
 name=Artifactory
-baseurl=https://repo.schwarz/artifactory/rpm/7/os/x86_64/
+#baseurl=https://repo.schwarz/artifactory/rpm/7/os/x86_64/
+baseurl=https://repo.schwarz/artifactory/rpm/7/$basearch
 enabled=1
 gpgcheck=0
