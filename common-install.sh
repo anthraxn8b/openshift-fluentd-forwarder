@@ -39,6 +39,11 @@ if [[ $RELEASE =~ $CENTOS_MATCH && -z "$USE_SYSTEM_REPOS" ]]; then
   yum install -y epel-release centos-release-scl-rh
 fi
 
+# cleanup before..
+yum clean all
+rm -rf /var/cache/yum/*
+rm -rf /var/lib/yum/*
+
 # ensure latest versions
 yum update $YUM_ARGS -y
 
