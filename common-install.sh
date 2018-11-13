@@ -45,6 +45,7 @@ rm -rf /var/cache/yum/*
 rm -rf /var/lib/yum/*
 
 # ensure latest versions
+ls -lha /etc/yum.repos.d/
 yum update $YUM_ARGS -y
 
 # install all required packages
