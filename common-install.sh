@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Use a kind of "strict" mode: http://redsymbol.net/articles/unofficial-bash-strict-mode/
+# To show the commands in output add the "x" parameter (before "o"!).
+set -euo pipefail
+IFS=$'\n\t'
+
 # get release version
 RELEASE=$(cat /etc/redhat-release)
 YUM_ARGS="--setopt=tsflags=nodocs"

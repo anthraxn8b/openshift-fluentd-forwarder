@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Use a kind of "strict" mode: http://redsymbol.net/articles/unofficial-bash-strict-mode/
+# To show the commands in output add the "x" parameter (before "o"!).
+set -euo pipefail
+IFS=$'\n\t'
+
 # set up user id into passwd wrapper
 export USER_ID=$(id -u)
 export GROUP_ID=$(id -g)
