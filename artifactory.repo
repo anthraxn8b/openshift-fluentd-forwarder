@@ -3,30 +3,35 @@ name=CentOS-$releasever - Base
 baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/$releasever/os/$basearch/
 enabled=1
 gpgcheck=0
+sslverify=0
 
 [updates]
 name=CentOS-$releasever - Updates
 baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/$releasever/updates/$basearch/
 enabled=1
 gpgcheck=0
+sslverify=0
 
 [extras]
 name=CentOS-$releasever - Extras
 baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/$releasever/extras/$basearch/
 enabled=1
 gpgcheck=0
+sslverify=0
 
 [centosplus]
 name=CentOS-$releasever - Plus
 baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/$releasever/centosplus/$basearch/
 enabled=1
 gpgcheck=0
+sslverify=0
 
 #[epel]
 #name=CentOS-$releasever - Epel
 #baseurl=https://repo.schwarz/artifactory/rpm-centos-remote/$releasever/epel/$basearch/
 #enabled=1
 #gpgcheck=0
+sslverify=0
 
 [z-epel]
 name=z-epel

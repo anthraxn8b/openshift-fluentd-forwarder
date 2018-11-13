@@ -35,8 +35,8 @@ fi
 CENTOS_MATCH='^CentOS.*'
 if [[ $RELEASE =~ $CENTOS_MATCH && -z "$USE_SYSTEM_REPOS" ]]; then
   echo "Configuring for CentOS..."
-  rpmkeys --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
-  yum install -y epel-release centos-release-scl-rh
+  #rpmkeys --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+  #yum install -y epel-release centos-release-scl-rh
 fi
 
 # cleanup before..
