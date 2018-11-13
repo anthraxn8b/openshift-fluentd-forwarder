@@ -40,7 +40,7 @@ RUN chmod g+rx ${HOME}/fluentd-check.sh && \
 # remove all repos and set the one and only artifactory-repo
 RUN  rm -rf           /etc/yum.repos.d/*
 COPY artifactory.repo /etc/yum.repos.d/
-RUN ls -lha /etc/yum.repos.d/
+#RUN ls -lha /etc/yum.repos.d/
 # execute files and remove when done
 RUN /tmp/common-install.sh && \
     rm -f /tmp/common-*.sh
