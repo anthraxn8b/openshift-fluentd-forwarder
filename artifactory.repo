@@ -33,16 +33,16 @@ sslverify=0
 #gpgcheck=0
 sslverify=0
 
-[z-epel]
-name=z-epel
-baseurl=https://sdeb-lnxrepo-p001.sys.schwarz/pulp/repos/S_STD_X_RH7_epel7_x86_64/
-enabled=1
-gpgcheck=0
-sslverify=0
+#[z-epel]
+#name=z-epel
+#baseurl=https://sdeb-lnxrepo-p001.sys.schwarz/pulp/repos/S_STD_X_RH7_epel7_x86_64/
+#enabled=1
+#gpgcheck=0
+#sslverify=0
 
-[epel]
-name=z-epel
-baseurl=https://sdeb-lnxrepo-p001.sys.schwarz/pulp/repos/S_STD_X_RH7_epel7_x86_64/
-enabled=1
-gpgcheck=0
-sslverify=0
+#[epel]
+#name=z-epel
+#baseurl=https://sdeb-lnxrepo-p001.sys.schwarz/pulp/repos/S_STD_X_RH7_epel7_x86_64/
+#enabled=1
+#gpgcheck=0
+#sslverify=0
